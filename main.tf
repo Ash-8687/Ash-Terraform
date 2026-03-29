@@ -7,7 +7,7 @@ data "aws_ami" "amazon_linux" {
   owners      = ["amazon"]
 
   filter {
-    name   = "ash-test-terraform"
+    name   = "name"
     values = ["al2023-ami-*-x86_64"]
   }
 
