@@ -51,7 +51,7 @@ resource "aws_security_group" "ec2_sg" {
 
 resource "aws_instance" "web" {
   ami                    = data.aws_ami.amazon_linux.id
-  instance_type          = "t2.micro"
+  instance_type          = "t3.micro"
   key_name               = "ash-terraform-key"
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
 
